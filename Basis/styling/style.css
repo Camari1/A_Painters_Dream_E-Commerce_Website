@@ -1,0 +1,284 @@
+/*GENERAL STYLNG FOR EVERYTHING SO YOU DON'T HAVE
+TO REPEAT WEBSITE DESIGN. (EXAMPLE: Every "h1" tag
+will be designed as what is listed below; every "h2" 
+tag will be designed as what is listed below; every
+object with class "section-p1" will be designed as 
+what is listed below, etc)*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Serif', cursive;
+
+}
+
+h1 {
+    font-size: 45px;
+    line-height: 64px;
+    color: black;
+}
+
+h2 {
+    font-size: 41px;
+    line-height: 54px;
+    color: black;
+}
+
+h3 {
+    font-size: 33px;
+    color: black;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight:500;
+}
+
+P {
+    font-size: 16px;
+    color: black;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(
+       to right,
+       white 0%,
+       white 60.2%,
+       rgb(234, 234, 234) 60.2% 
+    );
+    
+}
+
+/*-----HEADER/NAVIGATION BAR SECTION-----*/
+
+
+/*How to Create a Header(Navigation Bar)*/
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color:rgb(208, 252, 252);
+    box-shadow: 0 5px 15px rgb(168, 168, 168);
+    /*position: sticky;
+    top: 0;
+    left: 0;*/
+
+}
+
+#logoImage {
+    width: 220px;
+    height: 100px;
+    border: 1px solid;
+
+}
+
+/*Navigation Bar*/
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Navigation Bar List*/
+#navbar li {
+    list-style: none;
+    padding: 0 40px;
+}
+
+/*Navigation Bar Listed Items*/
+#navbar li a {
+    font-size: 20px;
+    font-weight: 200;
+    text-decoration: none;
+    color: black;
+}
+
+/*Creates a hover effect*/
+#navbar li a:hover {
+    color: rgb(0, 187, 255);
+}
+
+/*Creates a hover effect for a specific nav category*/
+#navbar li:nth-child(4) a:hover {
+    color: rgb(255, 255, 1);
+}
+
+/*-----TOP OF HOME PAGE SECTION-----*/
+
+/*Top of Home Page*/
+#main-top {
+    background-image: url("/Basis/image/painting.jpg");
+    background-repeat: no-repeat;
+    width: 60.2%;
+    height: 70vh;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+}
+
+#main-top h1 {
+    padding-bottom: 5%;
+
+}
+
+#main-top h6{
+    font-weight: 500px;
+}
+
+#main-top button {
+background: linear-gradient(
+    to right,
+    aqua 0%,
+    aqua 15%,
+    rgb(69, 254, 254) 15%,
+    rgb(69, 254, 254) 50%,
+    rgb(135, 255, 255) 50%,
+    rgb(135, 255, 255) 75%,
+    rgb(165, 255, 255) 75%,
+    rgb(165, 255, 255) 80%,
+    rgb(175, 255, 255) 80%
+);
+color:black;
+padding: 5px;
+border: 0;
+font-weight: 500;
+font-size: 15px;
+cursor: pointer;
+
+}
+
+#main-top button:hover{
+    color: rgb(0, 187, 255);
+}
+
+/*-----FEATURES SECTION-----*/
+
+/*Designing the general "Features" section*/
+#features {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(158, 158, 158);
+}
+
+#features .fe-box img {
+    width: 100%;
+    margin-bottom: 10px; 
+}
+
+/*This designs the actual Features boxes.*/
+#features .fe-box {
+    
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgb(171, 171, 171);
+    border: 1px solid;
+    margin: 15px 0;
+    background-color: white;
+}
+
+/*This designs the text(h6) inside the box*/
+#features .fe-box h6{
+    display: inline-block;
+    padding: 5px 7px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color:rgb(56, 56, 56);
+    background-color: rgb(255, 237, 188);
+
+}
+
+/*This changes the feature boxes depending on what box (nth)
+you want to change*/
+#features .fe-box:nth-child(2) h6{
+    background-color: rgb(144, 255, 235);
+    color: rgb(56, 56, 56);
+}
+
+#features .fe-box:nth-child(3) h6{
+    background-color: rgb(255, 88, 58);
+    color: rgb(56, 56, 56);
+}
+
+#features .fe-box:nth-child(4) h6{
+    background-color: rgb(255, 132, 84);
+    color: rgb(56, 56, 56);
+}
+
+/*-----PRODUCT SECTION-----*/
+
+#product1 {
+    background-color: rgb(208, 252, 252);
+    text-align: center;
+}
+
+#product1 .product-box{
+    display: flex;
+    flex-wrap: wrap; /*This makes it so list of items don't go off screen, it will start a new line.*/
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+#product1 .product{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 15px 0;
+    position: relative;
+}
+
+#product1 .product:hover{
+    color: rgb(40, 173, 246);
+}
+
+#product1 .product img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+#product1 .product .description{
+    text-align: start; /*This means that the text wil be closer to the left edge. "end" is opposite*/
+    padding: 10px 0;
+}
+
+#product1 .product span{
+    color: rgb(236, 180, 23);
+}
+
+#product1 .product .fa-star{
+    width: 70px;
+    height: 70px;
+    line-height: 40px;
+    color:black;
+    cursor: pointer;
+    position: absolute;
+    bottom: 1px;
+    right: 20px;
+
+}
+
+#product1 .product .fa-star:hover{
+    color: rgb(255, 255, 1);
+}
+

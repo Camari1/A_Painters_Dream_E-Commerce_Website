@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Painter's Dream</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="styling/style.css">
+</head>
+<!--NOTES: 
+    ** Using ID, and CLASS names helps with deciding what parts of the code you want to use for CSS. You can design using
+        those names.
+    ** When you add images, make sure you keep them in an organized folder titled "images, or img"
+    ** When you want to style multiple webpages keep them in an organized folder titled "styling". Also
+        at the document of each HTML webpage you create, make sure you add the name of the styling sheet to the 
+        href(link). Visual: "<link rel="stylesheet" href = "INSERT STYLE SHEET YOU ARE USING">
+    ** At every top of any tag you use, whether it's <section>, or <h1>, or <p>, or <div>, and it has a CLASS
+        or ID name attached to it, if you use CSS the styling will be applied to the general part of that code.
+        For example, let's say i wanted to add the background color to a <section> tag with the id name "header".
+        The entire section part will have the background color, the subdivisions or everything underneath it will
+        have the same background color as the <section> tag with the id name "header".-->
+<body>
+
+    <section id="header"> <!--This tag provides sections to a website Example: a header section, a products section, etc.-->
+        <a href="#">
+            <img src="image/Painter's Dream Logo.png", id ="logoImage" alt=""> <!--This is used to add images.-->
+        </a>
+        <div> <!--This section can be used to create a navigation bar.-->
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="sell.html">Sell</a></li>
+                <li><a href="collection.html"><i class="fa-regular fa-star"></i></a></li> <!--The <i> tag was an icon used from Font Awesome-->
+            </ul>
+        </div>
+    </section>
+
+    <section id="main-top">
+        <h6>Be inspired by our</h6>
+        <h1>Art Collections</h1>
+        <button>Begin Shopping</button> <!--This is how you add a button to a website-->
+    </section>
+
+    <section id="features" class ="section-p1"> 
+        <div class="fe-box"> 
+            <img src="/Basis/image/features/f1.png" alt="">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/Basis/image/features/f3.png" alt="">
+            <h6>Go Sell</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/Basis/image/features/f4.png" alt="">
+            <h6>Go Shop</h6>
+        </div>
+        <div class="fe-box">
+            <img src="/Basis/image/features/f2.png" alt="">
+            <h6>Guaranteed Satisfaction</h6>
+        </div>
+    </section>
+
+    <section id="product1" class ="section-p1">
+        <h2>Featured Products</h2>
+        <p>These are our top purchases</p>
+        <div class="product-box">
+            <div class ="product">
+                <img src="/Basis/image/featured-product/productbrush1.png" alt="">
+                <div class="description">
+                    <span>Walmart</span>
+                    <h4>Paint Brushes</h4>
+                    <h4>$4.25</h4>
+                </div>
+                <a href="#"><i class="fa-regular fa-star"></i></a>
+            </div>
+            <div class ="product">
+                <img src="/Basis/image/featured-product/product4.png" alt="">
+                <div class="description">
+                    <span>Camari</span>
+                    <h4>Rose and Diamond</h4>
+                    <h4>$25.00</h4>
+                </div>
+                <a href="#"><i class="fa-regular fa-star"></i></a>
+            </div>
+            <div class ="product">
+                <img src="/Basis/image/featured-product/product1.png" alt="">
+                <div class="description">
+                    <span>Camari</span>
+                    <h4>Winter's Coming</h4>
+                    <h4>$30.00</h4>
+                </div>
+                <a href="#"><i class="fa-regular fa-star"></i></a>
+            </div>
+            <div class ="product">
+                <img src="/Basis/image/featured-product/paint1.png" alt="">
+                <div class="description">
+                    <span>Hobby Lobby</span>
+                    <h4>Acrylic Paint</h4>
+                    <h4>$9.28</h4>
+                </div>
+                <a href="#"><i class="fa-regular fa-star"></i></a>
+            </div>
+            <div class ="product">
+                <img src="/Basis/image/featured-product/product3.png" alt="">
+                <div class="description">
+                    <span>Camari</span>
+                    <h4>Sky Fruit</h4>
+                    <h4>$50.00</h4>
+                </div>
+                <a href="#"><i class="fa-regular fa-star"></i></a>
+            </div>
+            <div class ="product">
+                <img src="/Basis/image/featured-product/product2.png" alt="">
+                <div class="description">
+                    <span>Camari</span>
+                    <h4>Colors in Sky</h4>
+                    <h4>$10.50</h4>
+                </div>
+                <a href="#"><i class="fa-regular fa-star"></i></a>
+            </div>
+            <div class ="product">
+                <img src="/Basis/image/featured-product/canvas.png" alt="">
+                <div class="description">
+                    <span>Michaels</span>
+                    <h4>9 x 10 Canvas</h4>
+                    <h4>$9.15</h4>
+                </div>
+                <a href="#"><i class="fa-regular fa-star"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
