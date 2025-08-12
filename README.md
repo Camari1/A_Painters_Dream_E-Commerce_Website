@@ -1,0 +1,1 @@
+Integrated my passion for computer science with my interest in art. The website enables users to buy and sell art-related products and items, and its design—built using HTML, CSS, and JavaScript—demonstrates my proficiency in web development.
